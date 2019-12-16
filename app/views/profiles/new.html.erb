@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Create a new Profile</h1>
+      <%= simple_form_for @profile do |f| %>
+      <%= f.input :full_name %>
+      <%= f.input :email %>
+      <%= f.input :current_role %>
+      <%= f.input :description %>
+      <%= f.input :github_username %>
+      <%= f.input :slack_username %>
+      <%= f.button :submit, class: 'btn, btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>

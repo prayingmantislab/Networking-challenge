@@ -1,0 +1,14 @@
+<h1>Le Wagon's Tel Aviv's alumni Network Platform</h1>
+<div class="container">
+  <div class="row"><%= link_to "Add a profile", new_profile_path, class: "btn btn-primary btn-lg" %></div>
+  <div class="row">
+    <% @profiles.each do |profile|  %>
+    <h2><%= profile.full_name %></h2>
+    <h3><%= profile.email %></h3>
+    <h3><%= profile.current_role %></h3>
+    <h3><%= profile.description %></h3>
+    <h3><%= profile.github_username %></h3>
+    <h3><%= profile.slack_username %></h3>
+    <% end %>
+  </div>
+</div>
